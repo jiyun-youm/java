@@ -35,8 +35,8 @@ public class Car {
 		*/
 
         for(int i=0;i<=200;i=i+30) {
-            accel(speed);
-            System.out.println(speed);  //이거 맞음????
+            accel(i);
+            System.out.println(speed);
         }
 		
 		

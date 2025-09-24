@@ -26,9 +26,7 @@ public class SuperSonicAp extends Airplane {
     }
 
     String info(String name, int speed){
-        this.name=name;
-        this.speed=speed;
-        return this.name+this.speed;
+        return this.name+this.flyMode;
     }
 }
 

@@ -1,5 +1,6 @@
 package quiz07;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainClass {
@@ -13,11 +14,12 @@ public class MainClass {
          * 4. main에서 User객체를  생성 후
          *    (홍길동, 123123, 20)을 저장 하고 값을 확인하세요.
          */
-        User user= new User("홍길동",20,"123");
 
-
-
-
+//        User u1 = new User();
+//        u1.setAge(20);
+//        u1.setName("홍길동");
+//        u1.setRrn("123123");
+        User u1 = new User("홍길동", 20, "123123");
 
         System.out.println("----------문제2----------");
         /* 문제2
@@ -27,8 +29,11 @@ public class MainClass {
          * 4. 향상된 포문을 사용해서  *모든변수*를 출력하세요.
          * ex) User[] arr = new User[2];
          */
-        User [] arr= new User[2];
-        arr[0]=user;
+        User[] arr = new User[2];
+        arr[0] = u1;
+        arr[1] = new User("이순신", 30, "123123");
+
+        System.out.println(Arrays.toString(arr));
 
         System.out.println("----------문제3----------");
         /* 문제 3
@@ -38,16 +43,26 @@ public class MainClass {
          * 4. while문 안에서 User객체를 User배열에 저장하세요.
          * 5. Arrays.toString(배열명) 을 이용하여 저장되는 값을 확인하세요.
          */
-        User [] arr2= new User[5];
-        Scanner scan=new Scanner(System.in);
-        int i=0;
-        while (i<arr2.length){
-            String name=scan.next();
-            int age=scan.nextInt();
-            String rrn=scan.next();
 
-            User user= new User(name, age, rrn);
+        //1.
+        User[] arr2 = new User[5];
+        Scanner scan = new Scanner(System.in);
+
+        int i = 0;
+        while( i < arr2.length ){
+
+            String name = scan.next();
+            int age = scan.nextInt();
+            String rrn = scan.next();
+
+            User user = new User(name, age, rrn);
+            arr2[i] = user;
+
+            System.out.println(Arrays.toString(arr2));
+
             i++;
         }
+
+
     }
 }

@@ -5,6 +5,7 @@ public class Parent {
     String mother;
 
     Parent(String father, String mother) {
+        super();
         this.father = father;
         this.mother = mother;
     }

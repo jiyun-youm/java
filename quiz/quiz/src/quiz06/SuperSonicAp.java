@@ -2,7 +2,8 @@ package quiz06;
 
 public class SuperSonicAp extends Airplane {
 
-	/*
+
+    /*
 	 * 1. Airplane을 상속받습니다. 생성자는 이름을 받아서 초기화 하도록 생성하세요
 	 * 2. flyMode int형 변수를 선언하세요
 	 * 3. fly() 메서드를 오버라딩합니다
@@ -11,23 +12,26 @@ public class SuperSonicAp extends Airplane {
 	 * 4. info() 메서드는 이름을 비행기의 이름, 속도를 리턴하도록 생성하세요.
 	 */
 
-    public SuperSonicAp(String name) {
+    int flyMode = 0;
+
+    SuperSonicAp(String name) {
         super(name);
     }
-    int flyMode;
 
     @Override
     void fly() {
-        if(flyMode==1){
-            System.out.println("고속 모드로 비행합니다");
-        } else if (flyMode==0) {
+        if(flyMode == 1) {
+            System.out.println("고속 비행 합니다.");
+        } else {
             super.fly();
         }
     }
 
-    String info(String name, int speed){
-        return this.name+this.flyMode;
+    String info() {
+        return "편명:" + name + ", 속도:" + flyMode;
     }
+
+
 }
 
 

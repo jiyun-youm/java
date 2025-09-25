@@ -1,19 +1,27 @@
 package quiz07;
 
 public class User {
+    //단순히, 데이터를 저장하기 위한 용도로 클래스 사용.
+    //프로그래밍에서 많이 사용.
     private String name;
-    private String rrn;
     private int age;
+    private String rrn;
 
-    Public User(){
-        this.name="Unknown";
-        this.rrn="Unknown";
-        this.age=0;
+    //생성자 - 기본생성자, 멤버변수 초기화 생성자
+    public User() {}
+
+    public User(String name, int age, String rrn) {
+        this.name = name;
+        this.age = age;
+        this.rrn = rrn;
     }
-    Public User(String name, String rrn, int age) {
-        this.name= name;
-        this.rrn=rrn;
-        this.age=age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {
@@ -24,6 +32,11 @@ public class User {
         this.name = name;
     }
 
-    //기본 생성자로 만들어서..setter로 값 지정
-    //생성자
+    public String getRrn() {
+        return rrn;
+    }
+
+    public void setRrn(String rrn) {
+        this.rrn = rrn;
+    }
 }

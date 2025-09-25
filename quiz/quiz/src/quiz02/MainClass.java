@@ -11,7 +11,6 @@ public class MainClass {
         double bal = acc.getBalance();
         System.out.println("잔액:" + bal);
 
-
         Car car = new Car("벤츠 마이바흐");
         car.accelerate();
         car.getCarInfo();

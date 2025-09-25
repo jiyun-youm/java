@@ -2,11 +2,15 @@ package day07.poly.basic3;
 
 public class Student extends Person {
 
-    String studentId;  //학생의 고유기능
+    String studentId; //학생의 고유기능
 
-    String info() {
-        return "이름"+ name+", 나이"+ age+", 학번: "+studentId;
+    Student(String name, int age, String studentId) {
+        super(name, age);
+        this.studentId = studentId;
     }
 
-
+    //super.메서드() - 오버라이딩된 자식에서 부모님 메서드를 호출해야할 때.
+    String info() {
+        return super.info() + ", 학번:" + studentId;
+    }
 }

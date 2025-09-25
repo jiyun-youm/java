@@ -1,7 +1,6 @@
 package quiz04;
 
 //부모클래스
-
 public class Book {
     String title;
     String author;
@@ -10,6 +9,7 @@ public class Book {
     Book() {
 
     }
+
     // 생성자
     Book(String title, String author, double price) {
         this.title = title;

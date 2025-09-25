@@ -1,6 +1,6 @@
 package quiz08;
 
-/**
+/*
  * 문제: Person 클래스를 완성하세요
  * 
  * 요구사항:
@@ -15,9 +15,8 @@ public class Person {
     private String name;
     private Phone phone;
 
-    public Person( ){
-        this.name = "";
-    }
+    public Person() {}
+
     public Person(String name, Phone phone) {
         this.name = name;
         this.phone = phone;
@@ -39,8 +38,10 @@ public class Person {
         this.phone = phone;
     }
 
-
-    public void getPersonInfo(){
-        System.out.println("name"+name+"phone"+phone.getPhoneInfo());
+    //
+    public void getPersonInfo() {
+        System.out.println("Name : " + name + ", Phone : " + phone.getPhoneInfo() ) ;
     }
+
+
 }

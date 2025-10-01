@@ -15,7 +15,7 @@ public class PriorityQueueEx {
         queue.offer(2);
         queue.offer(5);
 
-        System.out.println(queue);
+        System.out.println(queue); //1,2,3,4,5
 
         System.out.println( queue.poll() );
         System.out.println( queue.poll() );

@@ -7,7 +7,7 @@ public class DequeEx {
     public static void main(String[] args) {
 
         //양방향 큐
-        Deque<Integer> queue = new ArrayDeque<>();
+        Deque<Integer> queue = new ArrayDeque<>();  //ArrayDeque는 부모님이 Deque라 Deque 클래스에 저장
 
         queue.offer(1);
         queue.offer(2);
